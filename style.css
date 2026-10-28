@@ -1,0 +1,387 @@
+/* =========================
+   1. التنسيق العام
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f3ed;
+    color: #050505;
+    direction: rtl;
+    line-height: 1.8;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================
+   2. رأس الصفحة
+========================= */
+
+header {
+    background-color: #060606;
+    color: white;
+    padding: 20px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+header h1 {
+    color: #c6ad5b;
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+
+
+/* =========================
+   3. قائمة التنقل
+========================= */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #c6a15b;
+}
+
+
+/* =========================
+   4. الأقسام
+========================= */
+
+main {
+    width: 100%;
+}
+
+section {
+    padding: 50px 7%;
+    margin-bottom: 10px;
+}
+
+section h2 {
+    color: #a58243;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   5. الصور
+========================= */
+
+section img {
+    border-radius: 8px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   6. الروابط والأزرار
+========================= */
+
+section a {
+    display: inline-block;
+    background-color: #c6a15b;
+    color: #1c1c1c;
+    padding: 10px 22px;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+section a:hover {
+    background-color: #1c1c1c;
+    color: white;
+}
+
+
+/* =========================
+   7. بطاقات المنتجات
+========================= */
+
+article {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    margin: 1%;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #e8e0d3;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    transition: 0.3s;
+}
+
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+article img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+article h3 {
+    color: #1c1c1c;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+article p {
+    color: #666;
+    font-size: 14px;
+}
+
+
+/* =========================
+   8. جدول الأسعار
+========================= */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-top: 25px;
+}
+
+th {
+    background-color: #1c1c1c;
+    color: #c6a15b;
+    padding: 15px;
+}
+
+td {
+    padding: 14px;
+    text-align: center;
+    border: 1px solid #ddd3c2;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f0e8da;
+}
+
+tbody tr:hover {
+    background-color: #e8d7b5;
+}
+
+
+/* =========================
+   9. نموذج التواصل
+========================= */
+
+form {
+    max-width: 700px;
+    margin: 25px auto;
+    padding: 30px;
+    background-color: white;
+    border: 1px solid #e8e0d3;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+form label {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+input[class="text"],
+input[class="email"],
+input[class="tel"],
+select
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #d8cbb6;
+    border-radius: 4px;
+    background-color: #fcfaf7;
+    font-size: 15px;
+    font-family: inherit;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #c6a15b;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: #c6a15b;
+    margin: 8px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+/* =========================
+   10. زر إرسال الطلب
+========================= */
+
+button {
+    background-color: #c6a15b;
+    color: #1c1c1c;
+    border: none;
+    padding: 13px 30px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #1c1c1c;
+    color: white;
+}
+
+
+/* =========================
+   11. الخريطة
+========================= */
+
+iframe {
+    max-width: 100%;
+    border: 2px solid #c6a15b;
+    border-radius: 8px;
+}
+
+
+/* =========================
+   12. تذييل الصفحة
+========================= */
+
+footer {
+    background-color: #1c1c1c;
+    color: white;
+    text-align: center;
+    padding: 30px 7%;
+    margin-top: 30px;
+}
+
+footer p {
+    color: #ddd;
+    font-size: 14px;
+}
+
+footer a {
+    color: #c6a15b;
+}
+
+
+/* =========================
+   13. تنسيق الأجهزة اللوحية
+========================= */
+
+@media (max-width: 900px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    article {
+        width: 46%;
+    }
+
+    section {
+        padding: 35px 5%;
+    }
+
+}
+
+
+/* =========================
+   14. تنسيق الهواتف
+========================= */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 27px;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    section {
+        padding: 25px 5%;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+
+    article {
+        display: block;
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    article img {
+        height: 230px;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th,
+    td {
+        padding: 8px 5px;
+    }
+
+}
